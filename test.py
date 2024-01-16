@@ -3,7 +3,8 @@ def sayHello():
 
 def run_tests():
     tests = [
-        sayHello() == "Hello world!"
+        sayHello() == "Hello world!",
+        sayHello() == "Goodbye, cruel world!"
     ]
     
     if all(tests):
