@@ -1,3 +1,5 @@
+import sys
+
 def sayHello():
     return "Hello world!"
 
@@ -8,8 +10,8 @@ def run_tests():
     ]
     
     if all(tests):
-        return 0
+        sys.exit(0)
     else:
-        return 1    
+        sys.exit(1)
 
 run_tests()
