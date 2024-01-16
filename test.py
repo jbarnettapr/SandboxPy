@@ -3,10 +3,13 @@ import sys
 def sayHello():
     return "Hello world!"
 
+def sayGoodbye():
+    return "Goodbye, cruel world!"
+
 def run_tests():
     tests = [
         sayHello() == "Hello world!",
-        sayHello() == "Goodbye, cruel world!"
+        sayGoodbye() == "Goodbye, cruel world!"
     ]
     
     if all(tests):
