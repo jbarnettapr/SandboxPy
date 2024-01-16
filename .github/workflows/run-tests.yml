@@ -1,0 +1,16 @@
+name: Unit Tests
+
+on: push
+
+jobs:
+    tests:
+        runs-on: windows-latest
+
+        strategy:
+            matrix:
+                python-version: ["3.11", "3.12"]
+        
+        steps:
+            - uses: actions/checkout@v2
+            - name: unit tests
+              run: python test.py
